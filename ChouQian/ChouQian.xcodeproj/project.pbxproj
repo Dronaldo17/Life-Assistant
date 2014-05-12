@@ -41,6 +41,8 @@
 		955828A518F2F17F0009FB73 /* UIButton+Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 955828A218F2F17F0009FB73 /* UIButton+Bootstrap.m */; };
 		955828A818F2F5C90009FB73 /* ChineseZodiacSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 955828A718F2F5C90009FB73 /* ChineseZodiacSelectVC.m */; };
 		955828AB18F2FA840009FB73 /* Zodiac.plist in Resources */ = {isa = PBXBuildFile; fileRef = 955828AA18F2FA840009FB73 /* Zodiac.plist */; };
+		955C0BA51920B13900D3BD58 /* SNSManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 955C0BA41920B13900D3BD58 /* SNSManger.m */; };
+		955C0BA71920B25100D3BD58 /* demo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 955C0BA61920B25100D3BD58 /* demo@2x.png */; };
 		955FE0C0191CA20300C3CD46 /* nav_icon_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 955FE0BF191CA20300C3CD46 /* nav_icon_back@2x.png */; };
 		9569024E18C9A65800B2F109 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569024D18C9A65800B2F109 /* Foundation.framework */; };
 		9569025018C9A65800B2F109 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569024F18C9A65800B2F109 /* CoreGraphics.framework */; };
@@ -181,6 +183,9 @@
 		955828A618F2F5C90009FB73 /* ChineseZodiacSelectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseZodiacSelectVC.h; sourceTree = "<group>"; };
 		955828A718F2F5C90009FB73 /* ChineseZodiacSelectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseZodiacSelectVC.m; sourceTree = "<group>"; };
 		955828AA18F2FA840009FB73 /* Zodiac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Zodiac.plist; sourceTree = "<group>"; };
+		955C0BA31920B13900D3BD58 /* SNSManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNSManger.h; sourceTree = "<group>"; };
+		955C0BA41920B13900D3BD58 /* SNSManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNSManger.m; sourceTree = "<group>"; };
+		955C0BA61920B25100D3BD58 /* demo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "demo@2x.png"; sourceTree = "<group>"; };
 		955FE0BF191CA20300C3CD46 /* nav_icon_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_icon_back@2x.png"; sourceTree = "<group>"; };
 		9569024A18C9A65800B2F109 /* ChouQian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChouQian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9569024D18C9A65800B2F109 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -769,6 +774,8 @@
 				95DD877118D0B0FE005E490B /* CQLabel.m */,
 				95DD877318D0BEE7005E490B /* ParseTools.h */,
 				95DD877418D0BEE7005E490B /* ParseTools.m */,
+				955C0BA31920B13900D3BD58 /* SNSManger.h */,
+				955C0BA41920B13900D3BD58 /* SNSManger.m */,
 			);
 			path = "辅助类";
 			sourceTree = "<group>";
@@ -802,6 +809,7 @@
 		95C94CAE1915EB02003490E0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				955C0BA61920B25100D3BD58 /* demo@2x.png */,
 				9514C9EF19209CF60097F268 /* Default-568h@2x.png */,
 				9514C9E719209A040097F268 /* Default@2x.png */,
 				9514C9E919209A040097F268 /* icon@2x.png */,
@@ -920,6 +928,7 @@
 				956902D118CBFC3E00B2F109 /* lingqian.db in Resources */,
 				9514C9EC19209A040097F268 /* icon@2x.png in Resources */,
 				955FE0C0191CA20300C3CD46 /* nav_icon_back@2x.png in Resources */,
+				955C0BA71920B25100D3BD58 /* demo@2x.png in Resources */,
 				9514C9EA19209A040097F268 /* Default@2x.png in Resources */,
 				95CD318519162D2900AF9550 /* PhotoDownloadfailedSamll@2x.png in Resources */,
 				9514C9B5191F2C810097F268 /* FrontiaSource.bundle in Resources */,
@@ -998,6 +1007,7 @@
 				9512499E1918DA2200157565 /* TodayDataModel.m in Sources */,
 				95C94CAD1915E58D003490E0 /* BannerView.m in Sources */,
 				955828A418F2F17F0009FB73 /* NSString+FontAwesome.m in Sources */,
+				955C0BA51920B13900D3BD58 /* SNSManger.m in Sources */,
 				9595DA4618DD168600004AEC /* BSKeyboardControls.m in Sources */,
 				9569030E18CBFFDF00B2F109 /* FMDatabaseAdditions.m in Sources */,
 				95DD877218D0B0FE005E490B /* CQLabel.m in Sources */,

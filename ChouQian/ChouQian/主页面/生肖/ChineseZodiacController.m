@@ -123,7 +123,33 @@
 }
 -(void)rightButtonClicked:(id)sender
 {
+    //授权取消回调函数
+    FrontiaShareCancelCallback onCancel = ^(){
+        NSLogDebug(@"OnCancel: share is cancelled");
+    };
     
+    //授权失败回调函数
+    FrontiaShareFailureCallback onFailure = ^(int errorCode, NSString *errorMessage){
+        NSLogDebug(@"OnFailure: %d  %@", errorCode, errorMessage);
+    };
+    
+    //授权成功回调函数
+    FrontiaMultiShareResultCallback onResult = ^(NSDictionary *respones){
+        NSLogDebug(@"OnResult: %@", [respones description]);
+    };
+    
+    FrontiaShareContent *content=[[FrontiaShareContent alloc] init];
+    content.title = @"生活助手";
+    content.description = @"出门前 抽个签看看运势？看看我他（她）的星座合不合得来？看看历史上的今天发生过什么事情 一切尽在生活必备助手 生活必备助手 让您的生活 变得更美";
+    UIGraphicsBeginImageContext(self.view.frame.size); //currentView 当前的view
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *viewImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    content.imageObj = viewImage;
+    
+    NSArray *platforms = @[FRONTIA_SOCIAL_SHARE_PLATFORM_SINAWEIBO,FRONTIA_SOCIAL_SHARE_PLATFORM_WEIXIN_SESSION,FRONTIA_SOCIAL_SHARE_PLATFORM_WEIXIN_TIMELINE,FRONTIA_SOCIAL_SHARE_PLATFORM_EMAIL,FRONTIA_SOCIAL_SHARE_PLATFORM_SMS];
+    [SNSManger ShowSNSPlatforms:platforms supportedInterfaceOrientations:UIInterfaceOrientationMaskPortrait isStatusBarHidden:NO targetViewForPad:self.view cancelListener:onCancel failureListener:onFailure resultListener:onResult frontiaShareContent:content];
 }
 -(void)createButton
 {

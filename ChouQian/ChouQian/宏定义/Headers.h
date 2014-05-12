@@ -25,3 +25,4 @@
 #import "ParamMarcos.h"
 #import "TodayDataManger.h"
 #import <Frontia/Frontia.h>
+#import "SNSManger.h"

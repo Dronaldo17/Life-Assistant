@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>066BC923-A3CC-4C70-8978-DA18F913A28C</string>
+	<string>56FF3C98-13D9-4792-B92E-6CB2443FCCAA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ChouQian</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>865766A6-37CF-4E87-9466-8F94C51A7305</key>
-		<string>https://github.com/Dronaldo17/chouqian.git</string>
+		<key>E61737ED-5B09-433C-B546-9F75666AB6F5</key>
+		<string>https://github.com/Dronaldo17/Life-Assistant.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ChouQian/ChouQian.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>865766A6-37CF-4E87-9466-8F94C51A7305</key>
+		<key>E61737ED-5B09-433C-B546-9F75666AB6F5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Dronaldo17/chouqian.git</string>
+	<string>https://github.com/Dronaldo17/Life-Assistant.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>865766A6-37CF-4E87-9466-8F94C51A7305</string>
+	<string>E61737ED-5B09-433C-B546-9F75666AB6F5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>865766A6-37CF-4E87-9466-8F94C51A7305</string>
+			<string>E61737ED-5B09-433C-B546-9F75666AB6F5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>chouqian</string>
+			<string>Life-Assistant</string>
 		</dict>
 	</array>
 </dict>

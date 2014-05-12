@@ -203,6 +203,7 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
 }
 -(void)getTodayDetailDataFromNetWork:(NSString*)href model:(TodayModel*)model
 {
+     [UITools showHudTitle:@"请求中"];
     GetTodayDataSuccessBlock  successBlock = ^(AFHTTPRequestOperation *operation, id responseObject){
         [UITools hideLoadingView];
         
