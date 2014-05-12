@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>text</key>
+		<string>水瓶座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>双鱼座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>白羊座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>金牛座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>双子座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>巨蟹座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>狮子座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>处女座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>天平座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>天蝎座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>射手座</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>摩羯座</string>
+	</dict>
+</array>
+</plist>
