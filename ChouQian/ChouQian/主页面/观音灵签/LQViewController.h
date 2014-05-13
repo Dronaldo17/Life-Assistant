@@ -9,7 +9,7 @@
 #import "BaseViewController.h"
 #import "BTGlassScrollView.h"
 
-@interface LQViewController : BaseViewController
+@interface LQViewController : BaseViewController<YouMiDelegate>
 @property (nonatomic, assign) int index;
 @property (nonatomic, strong) BTGlassScrollView *glassScrollView;
 - (id)initWithImage:(UIImage *)image;
