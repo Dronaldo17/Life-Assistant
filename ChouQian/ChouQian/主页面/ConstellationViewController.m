@@ -53,6 +53,7 @@
     UIImage * image = PNGIMAGE(@"MenuBackground@2x");
     
     _glassScrollView = [[BTGlassScrollView alloc] initWithFrame:self.view.frame BackgroundImage:image blurredImage:nil viewDistanceFromBottom:400 foregroundView:[self customView]];
+    [self createBanner];
     
     [self.view addSubview:_glassScrollView];
     [self createButton];
@@ -187,5 +188,17 @@
     self.navigationItem.rightBarButtonItem = barButton;
     
 }
+-(void)createBanner
+{
+    // 320x50
+    YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
+    CGFloat top = [UIScreen mainScreen].bounds.size.height - 50 - 20 - 44;
+    adView320x50.frame = CGRectMake(0,top, CGRectGetWidth(adView320x50.bounds), CGRectGetHeight(adView320x50.bounds));
+    adView320x50.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.5];
+    [adView320x50 start];
+    [_glassScrollView addSubview:adView320x50];
+    
+}
+
 
 @end

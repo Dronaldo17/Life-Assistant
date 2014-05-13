@@ -33,6 +33,7 @@
     self = [super init];
     if (self) {
         _glassScrollView = [[BTGlassScrollView alloc] initWithFrame:self.view.frame BackgroundImage:image blurredImage:nil viewDistanceFromBottom:400 foregroundView:[self customView]];
+        [self createBanner];
         [self.view addSubview:_glassScrollView];
     }
     return self;
@@ -61,16 +62,16 @@
     _model = [sourceArray objectAtIndex:0];
     NSLogDebug(@"sourceArray is %@",[[sourceArray objectAtIndex:0] jixiong]);
     [self createButton];
-    [self createBanner];
 }
 -(void)createBanner
 {
     // 320x50
     YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
-    adView320x50.frame = CGRectMake(0,100, CGRectGetWidth(adView320x50.bounds), CGRectGetHeight(adView320x50.bounds));
+    CGFloat top = [UIScreen mainScreen].bounds.size.height - 50 - 20 - 44;
+    adView320x50.frame = CGRectMake(0,top, CGRectGetWidth(adView320x50.bounds), CGRectGetHeight(adView320x50.bounds));
     adView320x50.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.5];
     [adView320x50 start];
-    [self.view addSubview:adView320x50];
+    [_glassScrollView addSubview:adView320x50];
 
 }
 - (void)viewWillAppear:(BOOL)animated
@@ -139,7 +140,7 @@
     shiyueView3.backgroundColor = [UIColor clearColor];
     [view addSubview:shiyueView3];
 
-    view.height = _tempHeight;
+    view.height = _tempHeight+50;
     return view;
 }
 -(void)rightButtonClicked:(id)sender
@@ -181,31 +182,5 @@
 
 }
 #pragma youmidelegate
-
-- (void)didReceiveAd:(YouMiView *)adView {
-        NSLogDebug(@"获得广告");
-}
-
-- (void)didFailToReceiveAd:(YouMiView *)adView  error:(NSError *)error {
-     NSLogDebug(@"获取广告失败");
-}
-
-- (void)willPresentScreen:(YouMiView *)adView {
-     NSLogDebug(@"将要显示全屏广告");
-    
-}
-
-- (void)didPresentScreen:(YouMiView *)adView {
-     NSLogDebug(@"已显示全屏广告");
-    }
-
-- (void)willDismissScreen:(YouMiView *)adView {
-     NSLogDebug(@"将要退出全屏广告");
-   
-}
-
-- (void)didDismissScreen:(YouMiView *)adView {
-     NSLogDebug(@"取消全屏广告");
-}
 
 @end

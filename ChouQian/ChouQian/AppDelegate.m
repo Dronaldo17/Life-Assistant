@@ -20,7 +20,7 @@
     [self addAVOS];
     
     /*作者:窦静轩    描述:添加广告*/
-//     [YouMiConfig launchWithAppID:YouMi_Publish_ID appSecret:YouMi_Secret];
+     [YouMiConfig launchWithAppID:YouMi_Publish_ID appSecret:YouMi_Secret];
     
     /*作者:窦静轩    描述:加载Menu*/
     [self addMenu];

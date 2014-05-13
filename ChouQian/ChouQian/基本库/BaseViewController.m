@@ -135,4 +135,31 @@
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+
+- (void)didReceiveAd:(YouMiView *)adView {
+    NSLogDebug(@"获得广告");
+}
+
+- (void)didFailToReceiveAd:(YouMiView *)adView  error:(NSError *)error {
+    NSLogDebug(@"获取广告失败");
+}
+
+- (void)willPresentScreen:(YouMiView *)adView {
+    NSLogDebug(@"将要显示全屏广告");
+    
+}
+
+- (void)didPresentScreen:(YouMiView *)adView {
+    NSLogDebug(@"已显示全屏广告");
+}
+
+- (void)willDismissScreen:(YouMiView *)adView {
+    NSLogDebug(@"将要退出全屏广告");
+    
+}
+
+- (void)didDismissScreen:(YouMiView *)adView {
+    NSLogDebug(@"取消全屏广告");
+}
 @end
