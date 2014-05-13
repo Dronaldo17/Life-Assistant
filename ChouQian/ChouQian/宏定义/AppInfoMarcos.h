@@ -40,6 +40,6 @@
 
 #define AVOSMasterKey @"nkclidfigl76qe2vxgd383so2j40x4sue99e6uxd9v0g6dxv"
 
-
+#define ADSage_Publish_ID @"6f06ac1ba2bc43feae908aee2d329a83"
 
 #endif

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MenuViewController.h"
 #import "LQViewController.h"
+#import "MobiSageSDK.h"
 
 @implementation AppDelegate
 
@@ -18,6 +19,9 @@
     
     /*作者:窦静轩    描述:AVOS的加载*/
     [self addAVOS];
+    
+    /*作者:窦静轩    描述:添加广告*/
+//    [[MobiSageManager getInstance] setPublisherID:ADSage_Publish_ID deployChannel:@"Dev"];
     
     /*作者:窦静轩    描述:加载Menu*/
     [self addMenu];

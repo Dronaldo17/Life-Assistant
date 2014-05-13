@@ -26,3 +26,5 @@
 #import "TodayDataManger.h"
 #import <Frontia/Frontia.h>
 #import "SNSManger.h"
+#import "MobiSageSDK.h"
+#import "MobiSageNative.h"
