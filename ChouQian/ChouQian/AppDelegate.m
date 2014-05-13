@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "MenuViewController.h"
 #import "LQViewController.h"
-#import "MobiSageSDK.h"
 
 @implementation AppDelegate
 
@@ -21,7 +20,7 @@
     [self addAVOS];
     
     /*作者:窦静轩    描述:添加广告*/
-//    [[MobiSageManager getInstance] setPublisherID:ADSage_Publish_ID deployChannel:@"Dev"];
+//     [YouMiConfig launchWithAppID:YouMi_Publish_ID appSecret:YouMi_Secret];
     
     /*作者:窦静轩    描述:加载Menu*/
     [self addMenu];
