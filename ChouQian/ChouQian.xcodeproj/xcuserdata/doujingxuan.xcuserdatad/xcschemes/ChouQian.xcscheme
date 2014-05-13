@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9569024918C9A65800B2F109"
-               BuildableName = "ChouQian.app"
+               BuildableName = "&#x62bd;&#x7b7e;.app"
                BlueprintName = "ChouQian"
                ReferencedContainer = "container:ChouQian.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9569024918C9A65800B2F109"
-            BuildableName = "ChouQian.app"
+            BuildableName = "&#x62bd;&#x7b7e;.app"
             BlueprintName = "ChouQian"
             ReferencedContainer = "container:ChouQian.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9569024918C9A65800B2F109"
-            BuildableName = "ChouQian.app"
+            BuildableName = "&#x62bd;&#x7b7e;.app"
             BlueprintName = "ChouQian"
             ReferencedContainer = "container:ChouQian.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9569024918C9A65800B2F109"
-            BuildableName = "ChouQian.app"
+            BuildableName = "&#x62bd;&#x7b7e;.app"
             BlueprintName = "ChouQian"
             ReferencedContainer = "container:ChouQian.xcodeproj">
          </BuildableReference>
