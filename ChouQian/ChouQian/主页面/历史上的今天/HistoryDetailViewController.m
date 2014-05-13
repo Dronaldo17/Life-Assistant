@@ -96,10 +96,12 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
     
     CGFloat height = [UITools calUILabelHeihtByString:string font:Font_Size_Blod(20) width:300];
     
-    LazyFadeInView * fadeView  = [[LazyFadeInView alloc] initWithFrame:CGRectMake(10, _tempHeight, 300, height)];
-    fadeView.text = string;
-    _tempHeight += fadeView.height;
-    [view addSubview:fadeView];
+    UIView * whatQianView1 = [UITools createBlackRoundsByString:string font:Font_Size_Blod(20)];
+    whatQianView1.top = _tempHeight;
+    whatQianView1.left = 10;
+    _tempHeight += height+50;
+    whatQianView1.backgroundColor = [UIColor clearColor];
+    [view addSubview:whatQianView1];
 
     view.height = _tempHeight+30;
     return view;
