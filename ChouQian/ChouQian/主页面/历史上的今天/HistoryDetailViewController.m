@@ -103,7 +103,7 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
     whatQianView1.backgroundColor = [UIColor clearColor];
     [view addSubview:whatQianView1];
 
-    view.height = _tempHeight+30;
+    view.height = _tempHeight+50;
     return view;
 }
 -(void)updateData

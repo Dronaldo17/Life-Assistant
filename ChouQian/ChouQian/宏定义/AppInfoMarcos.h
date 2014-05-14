@@ -44,4 +44,7 @@
 
 #define YouMi_Secret @"118d6a432ed88b92"
 
+
+#define Google_admob
+
 #endif
