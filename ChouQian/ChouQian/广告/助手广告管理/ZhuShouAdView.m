@@ -17,6 +17,7 @@
         if (num % 2 == 0) {
             YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
             [adView320x50 start];
+            self.frame = CGRectMake(0, 0, adView320x50.width, adView320x50.height);
             [self addSubview:adView320x50];
         }
         else
@@ -27,6 +28,7 @@
             bannerView.rootViewController = controller;
             
             [bannerView loadRequest:[GADRequest request]];
+        
             self = bannerView;
         }
     }
