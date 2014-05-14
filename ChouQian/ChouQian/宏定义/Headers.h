@@ -27,4 +27,4 @@
 #import <Frontia/Frontia.h>
 #import "SNSManger.h"
 #import "YouMiConfig.h"
-#import "YouMiView.h"
+#import "ZhuShouAdView.h"

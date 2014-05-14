@@ -178,12 +178,12 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
 -(void)createBanner
 {
     // 320x50
-    YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
-    CGFloat top = [UIScreen mainScreen].bounds.size.height - 50 - 20 - 44;
-    adView320x50.frame = CGRectMake(0,top, CGRectGetWidth(adView320x50.bounds), CGRectGetHeight(adView320x50.bounds));
-    adView320x50.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.5];
-    [adView320x50 start];
-    [_glassScrollView addSubview:adView320x50];
-    
+    ZhuShouAdView * adView = [[ZhuShouAdView alloc] initWithAdView:_glassScrollView controller:self];
+    CGFloat statusHeight  = 20;
+    CGFloat navHeight = 44;
+    CGFloat top = [UIScreen mainScreen].bounds.size.height - CGRectGetHeight(adView.bounds) - statusHeight - navHeight;
+    adView.frame = CGRectMake(0,top, CGRectGetWidth(adView.bounds), CGRectGetHeight(adView.bounds));
+    adView.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.5];
+    [_glassScrollView addSubview:adView];    
 }
 @end

@@ -27,6 +27,7 @@
 		9514C9EA19209A040097F268 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9514C9E719209A040097F268 /* Default@2x.png */; };
 		9514C9EC19209A040097F268 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9514C9E919209A040097F268 /* icon@2x.png */; };
 		9514C9F019209CF60097F268 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9514C9EF19209CF60097F268 /* Default-568h@2x.png */; };
+		951706B71923BB86004E0EAE /* ZhuShouAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 951706B61923BB86004E0EAE /* ZhuShouAdView.m */; };
 		9531F4091908FD3A009DB3EF /* ConstellationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531F4081908FD3A009DB3EF /* ConstellationViewController.m */; };
 		9531F40C1908FE5F009DB3EF /* ConstellationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531F40B1908FE5F009DB3EF /* ConstellationModel.m */; };
 		9531F40F190D0E04009DB3EF /* ConstellationSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531F40E190D0E04009DB3EF /* ConstellationSelectVC.m */; };
@@ -195,6 +196,8 @@
 		9514C9E719209A040097F268 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9514C9E919209A040097F268 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		9514C9EF19209CF60097F268 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		951706B51923BB86004E0EAE /* ZhuShouAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhuShouAdView.h; sourceTree = "<group>"; };
+		951706B61923BB86004E0EAE /* ZhuShouAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhuShouAdView.m; sourceTree = "<group>"; };
 		9531F4071908FD3A009DB3EF /* ConstellationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstellationViewController.h; sourceTree = "<group>"; };
 		9531F4081908FD3A009DB3EF /* ConstellationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstellationViewController.m; sourceTree = "<group>"; };
 		9531F40A1908FE5F009DB3EF /* ConstellationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstellationModel.h; sourceTree = "<group>"; };
@@ -529,6 +532,15 @@
 				9514C9CC192060150097F268 /* WeiyunAPI.h */,
 			);
 			path = QQ;
+			sourceTree = "<group>";
+		};
+		951706B41923BB52004E0EAE /* 助手广告管理 */ = {
+			isa = PBXGroup;
+			children = (
+				951706B51923BB86004E0EAE /* ZhuShouAdView.h */,
+				951706B61923BB86004E0EAE /* ZhuShouAdView.m */,
+			);
+			path = "助手广告管理";
 			sourceTree = "<group>";
 		};
 		9531F4061908FC5F009DB3EF /* 星座 */ = {
@@ -891,6 +903,7 @@
 		958DF1161921F96F0071B67B /* 广告 */ = {
 			isa = PBXGroup;
 			children = (
+				951706B41923BB52004E0EAE /* 助手广告管理 */,
 				9589CBF11923004B002743FC /* admob */,
 				95BCD093192223DD005D31DE /* 有米 */,
 			);
@@ -1320,6 +1333,7 @@
 				951249A11918DAAD00157565 /* TodayDetailModel.m in Sources */,
 				955828A818F2F5C90009FB73 /* ChineseZodiacSelectVC.m in Sources */,
 				9569031918CC027B00B2F109 /* LQViewController.m in Sources */,
+				951706B71923BB86004E0EAE /* ZhuShouAdView.m in Sources */,
 				9569025A18C9A65800B2F109 /* main.m in Sources */,
 				9569030518CBFFDF00B2F109 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				95C94CA71915D560003490E0 /* NSTimer+Addition.m in Sources */,
@@ -1435,6 +1449,9 @@
 					armv7,
 					armv7s,
 				);
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChouQian/第三方库/BaiduSNS/libs",
@@ -1492,6 +1509,8 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1505,6 +1524,9 @@
 					armv7,
 					armv7s,
 				);
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChouQian/第三方库/BaiduSNS/libs",
@@ -1536,6 +1558,7 @@
 					"$(PROJECT_DIR)/ChouQian/广告/有米/lib",
 					"$(PROJECT_DIR)/ChouQian/广告/admob",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -1562,6 +1585,8 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

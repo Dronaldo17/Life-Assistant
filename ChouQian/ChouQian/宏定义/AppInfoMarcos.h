@@ -45,6 +45,6 @@
 #define YouMi_Secret @"118d6a432ed88b92"
 
 
-#define Google_admob
+#define GoogleSDKPub_ID @"ca-app-pub-3057290509101093/2500403569"
 
 #endif

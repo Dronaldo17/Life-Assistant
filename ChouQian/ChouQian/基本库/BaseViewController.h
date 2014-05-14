@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIView+UU.h"
 
-@interface BaseViewController : UIViewController<YouMiDelegate>
+@interface BaseViewController : UIViewController
 {
     UILabel *_titleView;
 }
