@@ -9,7 +9,7 @@
 #ifndef ChouQian_AppInfoMarcos_h
 #define ChouQian_AppInfoMarcos_h
 
-#define App_ID @"686419939"
+#define App_ID @"877533761"
 
 #define AppVersion @"AppVersion"
 

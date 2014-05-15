@@ -11,15 +11,23 @@
 		</dict>
 		<dict>
 			<key>icon</key>
-			<string>setting-phone</string>
+			<string>setting-mianze</string>
 			<key>text</key>
-			<string>意见反馈</string>
+			<string>免责声明</string>
 		</dict>
 		<dict>
 			<key>icon</key>
 			<string>setting-mianze</string>
 			<key>text</key>
-			<string>免责声明</string>
+			<string>热门推荐</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>icon</key>
+			<string>setting-phone</string>
+			<key>text</key>
+			<string>意见反馈</string>
 		</dict>
 		<dict>
 			<key>icon</key>

@@ -29,4 +29,7 @@
 
 /*作者:窦静轩    描述:添加左边返回按钮*/
 + (UIButton *)createBarButtonWithObject:(id)obj andWithLeft:(BOOL)bIsLeftFlag;
+
+/**Author:Ronaldo Description:去评分*/
++(void)openAppStroreWihtViewController:(UIViewController*)controller;
 @end

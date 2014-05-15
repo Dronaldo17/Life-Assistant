@@ -1,5 +1,5 @@
 //
-//  SettingViewController.h
+//  AboutViewController.h
 //  ChouQian
 //
 //  Created by doujingxuan on 14-5-15.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SettingViewController : BaseViewController<SKStoreProductViewControllerDelegate>
+@interface AboutViewController : BaseViewController
 
 @end

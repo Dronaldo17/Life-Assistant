@@ -45,8 +45,12 @@
     self.title = @"生肖选择";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self addButtons];
     
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.image = [UIImage imageNamed:@"MenuBackground"];
+    [self.view addSubview:imageView];
+    
+    [self addButtons];
     //white status bar
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     

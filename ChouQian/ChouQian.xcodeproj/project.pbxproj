@@ -146,6 +146,10 @@
 		95D04CA11924AF560059DE81 /* setting-feedback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04C9F1924AF560059DE81 /* setting-feedback@2x.png */; };
 		95D04CA31924AFBB0059DE81 /* setting-mianze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */; };
 		95D04CA51924B0D50059DE81 /* setting-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CA41924B0D50059DE81 /* setting-phone@2x.png */; };
+		95D04CAB1924C3130059DE81 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D04CAA1924C3130059DE81 /* AboutViewController.m */; };
+		95D04CAD1924C7EE0059DE81 /* About.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CAC1924C7EE0059DE81 /* About.plist */; };
+		95D04CB21924C9960059DE81 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D04CAF1924C9960059DE81 /* libUMFeedback.a */; };
+		95D04CB31924C9960059DE81 /* umFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CB01924C9960059DE81 /* umFeedback.bundle */; };
 		95D9207018CF5DD7006F54A0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D9206F18CF5DD7006F54A0 /* MenuViewController.m */; };
 		95DD877218D0B0FE005E490B /* CQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877118D0B0FE005E490B /* CQLabel.m */; };
 		95DD877518D0BEE7005E490B /* ParseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877418D0BEE7005E490B /* ParseTools.m */; };
@@ -407,6 +411,12 @@
 		95D04C9F1924AF560059DE81 /* setting-feedback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-feedback@2x.png"; sourceTree = "<group>"; };
 		95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-mianze@2x.png"; sourceTree = "<group>"; };
 		95D04CA41924B0D50059DE81 /* setting-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-phone@2x.png"; sourceTree = "<group>"; };
+		95D04CA91924C3130059DE81 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		95D04CAA1924C3130059DE81 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		95D04CAC1924C7EE0059DE81 /* About.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = About.plist; sourceTree = "<group>"; };
+		95D04CAF1924C9960059DE81 /* libUMFeedback.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMFeedback.a; sourceTree = "<group>"; };
+		95D04CB01924C9960059DE81 /* umFeedback.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = umFeedback.bundle; sourceTree = "<group>"; };
+		95D04CB11924C9960059DE81 /* UMFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMFeedback.h; sourceTree = "<group>"; };
 		95D9206E18CF5DD7006F54A0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		95D9206F18CF5DD7006F54A0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		95DD877018D0B0FE005E490B /* CQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLabel.h; sourceTree = "<group>"; };
@@ -451,6 +461,7 @@
 				95C94CA01914A26C003490E0 /* libxml2.dylib in Frameworks */,
 				9569031318CC01CC00B2F109 /* libsqlite3.dylib in Frameworks */,
 				9514C9B9191F2C810097F268 /* libWeiboSDK in Frameworks */,
+				95D04CB21924C9960059DE81 /* libUMFeedback.a in Frameworks */,
 				9514C9B4191F2C810097F268 /* Frontia.framework in Frameworks */,
 				9514C9BA191F2C810097F268 /* libWeChatSDK in Frameworks */,
 				9514C9BB191F2C810097F268 /* libMobClickLibrary.a in Frameworks */,
@@ -514,6 +525,7 @@
 		9514C9AF191F2C810097F268 /* Umeng */ = {
 			isa = PBXGroup;
 			children = (
+				95D04CAE1924C9960059DE81 /* 意见反馈 */,
 				9514C9B1191F2C810097F268 /* 统计 */,
 			);
 			path = Umeng;
@@ -602,6 +614,7 @@
 				95D04C981924AC2A0059DE81 /* SettingList.plist */,
 				955828AA18F2FA840009FB73 /* Zodiac.plist */,
 				9531F410190D0EE3009DB3EF /* Constellation.plist */,
+				95D04CAC1924C7EE0059DE81 /* About.plist */,
 			);
 			path = file;
 			sourceTree = "<group>";
@@ -1115,10 +1128,46 @@
 		95D04C9A1924AE0A0059DE81 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
+				95D04CA61924C3010059DE81 /* 关于 */,
+				95D04CA71924C3010059DE81 /* 免责 */,
+				95D04CA81924C3010059DE81 /* 热门推荐 */,
 				95D04C9B1924AE160059DE81 /* SettingViewController.h */,
 				95D04C9C1924AE160059DE81 /* SettingViewController.m */,
 			);
 			path = "设置";
+			sourceTree = "<group>";
+		};
+		95D04CA61924C3010059DE81 /* 关于 */ = {
+			isa = PBXGroup;
+			children = (
+				95D04CA91924C3130059DE81 /* AboutViewController.h */,
+				95D04CAA1924C3130059DE81 /* AboutViewController.m */,
+			);
+			path = "关于";
+			sourceTree = "<group>";
+		};
+		95D04CA71924C3010059DE81 /* 免责 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "免责";
+			sourceTree = "<group>";
+		};
+		95D04CA81924C3010059DE81 /* 热门推荐 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "热门推荐";
+			sourceTree = "<group>";
+		};
+		95D04CAE1924C9960059DE81 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				95D04CAF1924C9960059DE81 /* libUMFeedback.a */,
+				95D04CB01924C9960059DE81 /* umFeedback.bundle */,
+				95D04CB11924C9960059DE81 /* UMFeedback.h */,
+			);
+			path = "意见反馈";
 			sourceTree = "<group>";
 		};
 		95F966FE19176100004ED47F /* label */ = {
@@ -1218,6 +1267,7 @@
 				95BCD0C1192223DD005D31DE /* xcode.min.css in Resources */,
 				95BCD0C6192223DD005D31DE /* icon.png in Resources */,
 				95BCD0BB192223DD005D31DE /* changelog.txt in Resources */,
+				95D04CB31924C9960059DE81 /* umFeedback.bundle in Resources */,
 				95C94CB01915EB02003490E0 /* todayBg@2x.png in Resources */,
 				9514C9CE192060150097F268 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				95BCD0BF192223DD005D31DE /* docs.css in Resources */,
@@ -1246,6 +1296,7 @@
 				95BCD0C3192223DD005D31DE /* doc_en.html in Resources */,
 				956902D718CBFC6500B2F109 /* shengxiao.db in Resources */,
 				95BCD0BC192223DD005D31DE /* bootstrap-responsive.min.css in Resources */,
+				95D04CAD1924C7EE0059DE81 /* About.plist in Resources */,
 				955828A318F2F17F0009FB73 /* FontAwesome.ttf in Resources */,
 				95BCD0C0192223DD005D31DE /* style.css in Resources */,
 				95D04CA11924AF560059DE81 /* setting-feedback@2x.png in Resources */,
@@ -1368,6 +1419,7 @@
 				955828A818F2F5C90009FB73 /* ChineseZodiacSelectVC.m in Sources */,
 				9569031918CC027B00B2F109 /* LQViewController.m in Sources */,
 				951706B71923BB86004E0EAE /* ZhuShouAdView.m in Sources */,
+				95D04CAB1924C3130059DE81 /* AboutViewController.m in Sources */,
 				9569025A18C9A65800B2F109 /* main.m in Sources */,
 				9569030518CBFFDF00B2F109 /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				95C94CA71915D560003490E0 /* NSTimer+Addition.m in Sources */,
@@ -1516,6 +1568,7 @@
 					"$(PROJECT_DIR)/ChouQian/广告/MobiSageSDK",
 					"$(PROJECT_DIR)/ChouQian/广告/有米/lib",
 					"$(PROJECT_DIR)/ChouQian/广告/admob",
+					"$(PROJECT_DIR)/ChouQian/第三方库/Umeng/意见反馈",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1543,7 +1596,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1591,6 +1644,7 @@
 					"$(PROJECT_DIR)/ChouQian/广告/MobiSageSDK",
 					"$(PROJECT_DIR)/ChouQian/广告/有米/lib",
 					"$(PROJECT_DIR)/ChouQian/广告/admob",
+					"$(PROJECT_DIR)/ChouQian/第三方库/Umeng/意见反馈",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
@@ -1619,7 +1673,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

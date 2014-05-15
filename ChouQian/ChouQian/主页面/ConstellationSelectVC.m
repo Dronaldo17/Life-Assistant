@@ -45,6 +45,12 @@
     
     self.title = @"星座选择";
     [super viewDidLoad];
+    
+    
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    imageView.image = [UIImage imageNamed:@"MenuBackground"];
+    [self.view addSubview:imageView];
+
     // Do any additional setup after loading the view.
     [self addButtons];
     

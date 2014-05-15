@@ -8,6 +8,7 @@
 
 #import "UITools.h"
 #import "CQLabel.h"
+#import "SettingViewController.h"
 
 @implementation UITools
 /*作者:窦静轩    描述:创建黑色圆角的view*/
@@ -84,5 +85,41 @@
     
     return btn;
 }
++(void)openAppStroreWihtViewController:(UIViewController*)controller
+{
+    int version = OSVersion();
+    if (version > 6) {
+        [UITools openAppStroreInApp:controller];
+    }
+    else{
+        [UITools openAppStroreOutApp];
+    }
+}
++(void)openAppStroreInApp:(UIViewController*)controller
+{
+    // Initialize Product View Controller
+    SKStoreProductViewController *storeProductViewController = [[SKStoreProductViewController alloc] init];
+    // Configure View Controller
+    [storeProductViewController setDelegate:(SettingViewController*)controller];
+    [storeProductViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier : @"509986973"}
+                                          completionBlock:^(BOOL result, NSError *error) {
+                                              if (error) {
+                                                  NSLogWarn(@"Error %@ with User Info %@.", error, [error userInfo]);
+                                              } else {
+                                                  // Present Store Product View Controller
+                                                  [controller presentViewController:storeProductViewController animated:YES completion:nil];
+                                              }
+                                          }];
+    
+}
++(void)openAppStroreOutApp
+{
+    NSString *str = [NSString stringWithFormat:
+                     @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@",
+                     App_ID];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+    
+}
+
 
 @end

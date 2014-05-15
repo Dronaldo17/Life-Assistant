@@ -7,6 +7,7 @@
 //
 
 #import "SettingViewController.h"
+#import "AboutViewController.h"
 
 @interface SettingViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -50,7 +51,12 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.bounces = NO;
 
+//    UIImageView * imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+//    imageView.image = [UIImage imageNamed:@"MenuBackground"];
+//    [self.view addSubview:imageView];
+    
     [self.view addSubview:_tableView];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -109,4 +115,31 @@
         cell.backgroundView = view;
         return cell;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+      NSString * text = [[[self.arr objectAtIndex:indexPath.section] objectAtIndex:indexPath.row] objectForKey:@"text"];
+    if ([text isEqualToString:@"关于生活助手"]) {
+        AboutViewController * abc = [[AboutViewController alloc] init];
+        [self.navigationController pushViewController:abc animated:YES];
+    }
+    if ([text isEqualToString:@"意见反馈"]) {
+        [UMFeedback showFeedback:self withAppkey:UMENG_APPKEY];
+    }
+
+    if ([text isEqualToString:@"免责声明"]) {
+        
+    }
+
+    if ([text isEqualToString:@"鼓励我们"]) {
+        [UITools openAppStroreWihtViewController:self];
+    }
+
+
+}
+#pragma mark productViewControllerDidFinish
+- (void)productViewControllerDidFinish:(SKStoreProductViewController *)viewController {
+    [viewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end
