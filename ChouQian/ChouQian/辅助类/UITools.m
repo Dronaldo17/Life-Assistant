@@ -53,6 +53,7 @@
 }
 +(void)showHudTitle:(NSString*)title
 {
+    
     [SVProgressHUD showWithStatus:title maskType:SVProgressHUDMaskTypeBlack];
 }
 +(void)hideLoadingView
@@ -101,8 +102,14 @@
     SKStoreProductViewController *storeProductViewController = [[SKStoreProductViewController alloc] init];
     // Configure View Controller
     [storeProductViewController setDelegate:(SettingViewController*)controller];
-    [storeProductViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier : @"509986973"}
+    
+    
+    XFT_MAIN(^{
+        [UITools showHudTitle:@"请求中..."];
+    });
+    [storeProductViewController loadProductWithParameters:@{SKStoreProductParameterITunesItemIdentifier : App_ID}
                                           completionBlock:^(BOOL result, NSError *error) {
+                                              [UITools hideLoadingView];
                                               if (error) {
                                                   NSLogWarn(@"Error %@ with User Info %@.", error, [error userInfo]);
                                               } else {

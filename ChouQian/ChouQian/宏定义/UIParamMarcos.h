@@ -100,3 +100,7 @@ NO)
 #define kMiddleContentViewHeight (kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTabBarHeight)
 #define KChatContentTableHeight (kScreenHeight - kStatusBarHeight - kNavigationBarHeight - 44)
 #define kLongButtonFrame(__offsetY) CGRectMake(9.0, __offsetY, kScreenWidth - 18.0, 40.0)
+
+/*作者:窦静轩    描述:主线程刷新*/
+#define XFT_MAIN(block) dispatch_async(dispatch_get_main_queue(), block)
+

@@ -12,4 +12,5 @@
 
 @interface ZhuShouAdView : UIView<YouMiDelegate,GADBannerViewDelegate>
 -(id)initWithAdView:(UIView*)bottomView controller:(UIViewController*)controller;
++(void)showRecommadWall;
 @end

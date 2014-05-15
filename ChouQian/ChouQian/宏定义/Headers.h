@@ -29,3 +29,4 @@
 #import "YouMiConfig.h"
 #import "ZhuShouAdView.h"
 #import "UMFeedback.h"
+#import "YouMiWall.h"

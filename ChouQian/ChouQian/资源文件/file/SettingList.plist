@@ -5,19 +5,13 @@
 	<array>
 		<dict>
 			<key>icon</key>
-			<string>setting-about</string>
+			<string></string>
 			<key>text</key>
 			<string>关于生活助手</string>
 		</dict>
 		<dict>
 			<key>icon</key>
-			<string>setting-mianze</string>
-			<key>text</key>
-			<string>免责声明</string>
-		</dict>
-		<dict>
-			<key>icon</key>
-			<string>setting-mianze</string>
+			<string></string>
 			<key>text</key>
 			<string>热门推荐</string>
 		</dict>
@@ -25,13 +19,13 @@
 	<array>
 		<dict>
 			<key>icon</key>
-			<string>setting-phone</string>
+			<string></string>
 			<key>text</key>
 			<string>意见反馈</string>
 		</dict>
 		<dict>
 			<key>icon</key>
-			<string>setting-feedback</string>
+			<string></string>
 			<key>text</key>
 			<string>鼓励我们</string>
 		</dict>

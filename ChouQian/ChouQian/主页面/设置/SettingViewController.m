@@ -127,8 +127,8 @@
         [UMFeedback showFeedback:self withAppkey:UMENG_APPKEY];
     }
 
-    if ([text isEqualToString:@"免责声明"]) {
-        
+    if ([text isEqualToString:@"热门推荐"]) {
+        [ZhuShouAdView showRecommadWall];
     }
 
     if ([text isEqualToString:@"鼓励我们"]) {

@@ -96,5 +96,13 @@
     NSLogDebug(@"google adViewWillLeaveApplication");
     
 }
++(void)showRecommadWall
+{
+    [YouMiWall showOffers:NO didShowBlock:^{
+        NSLogDebug(@"有米推荐墙已显示");
+    } didDismissBlock:^{
+        NSLogDebug(@"有米推荐墙已退出");
+    }];
 
+}
 @end
