@@ -10,6 +10,10 @@
 #import "LQModel.h"
 #import "BTGlassScrollView.h"
 
+#define Last_ChouQianDate @"Last_ChouQianDate"
+
+#define Last_ChouQianNumber @"Last_ChouQianNumber"
+
 @interface LQViewController ()
 {
     LKDBHelper * _help;
@@ -51,11 +55,39 @@
     
     //preventing weird inset
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
-        
+    
+    
     LKDBHelper *  help =  [[LKDBHelper alloc] initWithDBName:@"lingqian"];
     [help createTableWithModelClass:[LQModel class]tableName:@"lingqianSimple"];
     NSMutableDictionary * dict = [NSMutableDictionary dictionary];
-    int radomNumber = arc4random() % 100 + 1;
+    
+    int radomNumber = 0;
+    NSDate * lastDate = [ParseTools getValueFromNSUserDefaultsByKey:Last_ChouQianDate];
+    if (nil == lastDate) {
+        lastDate = [NSDate date];
+        [ParseTools syncNSUserDeafaultsByKey:Last_ChouQianDate withValue:lastDate];
+    }
+    NSTimeInterval interval = abs((int)[lastDate timeIntervalSinceNow]);
+    NSLogWarn(@"interval is %f",interval);
+    
+    if (interval < (60*60*24) && interval > 0) {
+        NSNumber * number = [ParseTools getValueFromNSUserDefaultsByKey:Last_ChouQianNumber];
+        if (number.intValue<=0) {
+            radomNumber = arc4random() % 100 + 1;
+            NSNumber * number = [NSNumber numberWithInt:radomNumber];
+            [ParseTools syncNSUserDeafaultsByKey:Last_ChouQianNumber withValue:number];
+        }
+        else{
+            radomNumber = number.intValue;
+        }
+    }
+    else{
+         radomNumber = arc4random() % 100 + 1;
+        NSNumber * number = [NSNumber numberWithInt:radomNumber];
+        [ParseTools syncNSUserDeafaultsByKey:Last_ChouQianNumber withValue:number];
+    }
+
+   
     dict[@"id"] = [NSString stringWithFormat:@"%d",radomNumber];
     NSArray * sourceArray = [help search:[LQModel class] where:dict orderBy:nil offset:0 count:MAXFLOAT tableName:@"lingqianSimple"];
     _model = [[LQModel alloc] init];

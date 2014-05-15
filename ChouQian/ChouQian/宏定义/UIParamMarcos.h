@@ -88,3 +88,15 @@ NO)
 
 
 #define NavBackGroundColor RGBACOLOR(12, 109, 190,0.8)
+
+
+#define kScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define kStatusBarHeight 20.0f
+#define kNavigationBarHeight 44.0f
+#define kNavigationBarLandscapeHeight 33.0f
+#define kTabBarHeight 49.0f
+#define kContentViewHeight (kScreenHeight - kStatusBarHeight - kNavigationBarHeight)
+#define kMiddleContentViewHeight (kScreenHeight - kStatusBarHeight - kNavigationBarHeight - kTabBarHeight)
+#define KChatContentTableHeight (kScreenHeight - kStatusBarHeight - kNavigationBarHeight - 44)
+#define kLongButtonFrame(__offsetY) CGRectMake(9.0, __offsetY, kScreenWidth - 18.0, 40.0)

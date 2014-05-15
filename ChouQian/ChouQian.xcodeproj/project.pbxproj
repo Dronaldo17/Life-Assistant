@@ -140,6 +140,12 @@
 		95CD318819162E5500AF9550 /* TodayFoucsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CD318719162E5500AF9550 /* TodayFoucsModel.m */; };
 		95CD318B191631C700AF9550 /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CD318A191631C700AF9550 /* HistoryDetailViewController.m */; };
 		95CD318E19163C8200AF9550 /* ADLivelyTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CD318D19163C8200AF9550 /* ADLivelyTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		95D04C991924AC2A0059DE81 /* SettingList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95D04C981924AC2A0059DE81 /* SettingList.plist */; };
+		95D04C9D1924AE160059DE81 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D04C9C1924AE160059DE81 /* SettingViewController.m */; };
+		95D04CA01924AF560059DE81 /* setting-about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04C9E1924AF560059DE81 /* setting-about@2x.png */; };
+		95D04CA11924AF560059DE81 /* setting-feedback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04C9F1924AF560059DE81 /* setting-feedback@2x.png */; };
+		95D04CA31924AFBB0059DE81 /* setting-mianze@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */; };
+		95D04CA51924B0D50059DE81 /* setting-phone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CA41924B0D50059DE81 /* setting-phone@2x.png */; };
 		95D9207018CF5DD7006F54A0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D9206F18CF5DD7006F54A0 /* MenuViewController.m */; };
 		95DD877218D0B0FE005E490B /* CQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877118D0B0FE005E490B /* CQLabel.m */; };
 		95DD877518D0BEE7005E490B /* ParseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877418D0BEE7005E490B /* ParseTools.m */; };
@@ -394,6 +400,13 @@
 		95CD318A191631C700AF9550 /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		95CD318C19163C8200AF9550 /* ADLivelyTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADLivelyTableView.h; sourceTree = "<group>"; };
 		95CD318D19163C8200AF9550 /* ADLivelyTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADLivelyTableView.m; sourceTree = "<group>"; };
+		95D04C981924AC2A0059DE81 /* SettingList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SettingList.plist; sourceTree = "<group>"; };
+		95D04C9B1924AE160059DE81 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		95D04C9C1924AE160059DE81 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		95D04C9E1924AF560059DE81 /* setting-about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-about@2x.png"; sourceTree = "<group>"; };
+		95D04C9F1924AF560059DE81 /* setting-feedback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-feedback@2x.png"; sourceTree = "<group>"; };
+		95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-mianze@2x.png"; sourceTree = "<group>"; };
+		95D04CA41924B0D50059DE81 /* setting-phone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-phone@2x.png"; sourceTree = "<group>"; };
 		95D9206E18CF5DD7006F54A0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		95D9206F18CF5DD7006F54A0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		95DD877018D0B0FE005E490B /* CQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLabel.h; sourceTree = "<group>"; };
@@ -586,6 +599,7 @@
 		955828A918F2FA720009FB73 /* file */ = {
 			isa = PBXGroup;
 			children = (
+				95D04C981924AC2A0059DE81 /* SettingList.plist */,
 				955828AA18F2FA840009FB73 /* Zodiac.plist */,
 				9531F410190D0EE3009DB3EF /* Constellation.plist */,
 			);
@@ -679,6 +693,7 @@
 		9569028218C9BF5600B2F109 /* 主页面 */ = {
 			isa = PBXGroup;
 			children = (
+				95D04C9A1924AE0A0059DE81 /* 设置 */,
 				9531F4061908FC5F009DB3EF /* 星座 */,
 				9595DA3318DBD0CB00004AEC /* 生肖 */,
 				956902AA18CAB85600B2F109 /* 历史上的今天 */,
@@ -1073,6 +1088,10 @@
 		95C94CAE1915EB02003490E0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				95D04CA41924B0D50059DE81 /* setting-phone@2x.png */,
+				95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */,
+				95D04C9E1924AF560059DE81 /* setting-about@2x.png */,
+				95D04C9F1924AF560059DE81 /* setting-feedback@2x.png */,
 				955C0BA61920B25100D3BD58 /* demo@2x.png */,
 				9514C9EF19209CF60097F268 /* Default-568h@2x.png */,
 				9514C9E719209A040097F268 /* Default@2x.png */,
@@ -1091,6 +1110,15 @@
 			children = (
 			);
 			path = "网络请求";
+			sourceTree = "<group>";
+		};
+		95D04C9A1924AE0A0059DE81 /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				95D04C9B1924AE160059DE81 /* SettingViewController.h */,
+				95D04C9C1924AE160059DE81 /* SettingViewController.m */,
+			);
+			path = "设置";
 			sourceTree = "<group>";
 		};
 		95F966FE19176100004ED47F /* label */ = {
@@ -1194,6 +1222,7 @@
 				9514C9CE192060150097F268 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				95BCD0BF192223DD005D31DE /* docs.css in Resources */,
 				95BCD0C8192223DD005D31DE /* guild.png in Resources */,
+				95D04CA51924B0D50059DE81 /* setting-phone@2x.png in Resources */,
 				9514C9DA19208E850097F268 /* icon_more_share_n@2x.png in Resources */,
 				9531F411190D0EE3009DB3EF /* Constellation.plist in Resources */,
 				956902D118CBFC3E00B2F109 /* lingqian.db in Resources */,
@@ -1201,6 +1230,9 @@
 				95BCD0C4192223DD005D31DE /* glyphicons-halflings-white.png in Resources */,
 				955FE0C0191CA20300C3CD46 /* nav_icon_back@2x.png in Resources */,
 				95BCD0BD192223DD005D31DE /* bootstrap.min.css in Resources */,
+				95D04CA01924AF560059DE81 /* setting-about@2x.png in Resources */,
+				95D04C991924AC2A0059DE81 /* SettingList.plist in Resources */,
+				95D04CA31924AFBB0059DE81 /* setting-mianze@2x.png in Resources */,
 				95BCD0BE192223DD005D31DE /* doc.css in Resources */,
 				955C0BA71920B25100D3BD58 /* demo@2x.png in Resources */,
 				9514C9EA19209A040097F268 /* Default@2x.png in Resources */,
@@ -1216,6 +1248,7 @@
 				95BCD0BC192223DD005D31DE /* bootstrap-responsive.min.css in Resources */,
 				955828A318F2F17F0009FB73 /* FontAwesome.ttf in Resources */,
 				95BCD0C0192223DD005D31DE /* style.css in Resources */,
+				95D04CA11924AF560059DE81 /* setting-feedback@2x.png in Resources */,
 				95BCD0C2192223DD005D31DE /* doc.html in Resources */,
 				956902D318CBFC3E00B2F109 /* shengri.db in Resources */,
 				9514C9D41920889B0097F268 /* FavoritesMapShareIcon@2x.png in Resources */,
@@ -1325,6 +1358,7 @@
 				95C94C941914990B003490E0 /* TodayHistoryController.m in Sources */,
 				9569030318CBFFDF00B2F109 /* BTGlassScrollView.m in Sources */,
 				956902A118CAACFA00B2F109 /* SysConfig.m in Sources */,
+				95D04C9D1924AE160059DE81 /* SettingViewController.m in Sources */,
 				9531F40F190D0E04009DB3EF /* ConstellationSelectVC.m in Sources */,
 				95DD877518D0BEE7005E490B /* ParseTools.m in Sources */,
 				95F9670419176100004ED47F /* LazyFadeInLayer.m in Sources */,
@@ -1509,7 +1543,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1525,8 +1559,8 @@
 					armv7s,
 				);
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChouQian/第三方库/BaiduSNS/libs",
@@ -1585,7 +1619,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

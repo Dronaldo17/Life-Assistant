@@ -13,6 +13,7 @@
 #import "ChineseZodiacSelectVC.h"
 #import "ConstellationSelectVC.h"
 #import "TodayHistoryController.h"
+#import "SettingViewController.h"
 
 @interface MenuViewController ()
 {
@@ -20,6 +21,7 @@
     UINavigationController * _zodiacNav;
     UINavigationController * _constellationNav;
     UINavigationController * _todayNav;
+    UINavigationController * _settingNav;
 }
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 @end
@@ -103,6 +105,15 @@
         
         }
             break;
+        case 4:{
+            if (!_settingNav) {
+                _settingNav = [[UINavigationController alloc] initWithRootViewController:[[SettingViewController alloc] init]];
+            }
+            self.sideMenuViewController.contentViewController = _settingNav;
+            [self.sideMenuViewController hideMenuViewController];
+            
+        }
+            break;
         default:
             break;
     }
@@ -141,8 +152,8 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"每日一签", @"生肖", @"星座", @"历史上的今天", @"生日"];
-    NSArray *images = @[@"IconHome", @"IconCalendar", @"IconProfile", @"IconSettings", @"IconEmpty"];
+    NSArray *titles = @[@"每日一签", @"生肖", @"星座", @"历史上的今天",@"设置"];
+    NSArray *images = @[@"IconHome", @"IconSettings", @"IconProfile", @"IconCalendar",@"IconSettings"];
     cell.textLabel.text = titles[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     
