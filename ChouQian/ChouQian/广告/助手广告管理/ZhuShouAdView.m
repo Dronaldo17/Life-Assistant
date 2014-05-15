@@ -13,7 +13,16 @@
 {
     self = [super init];
     if (self) {
-        int num = arc4random();
+//        /*作者:窦静轩    描述:两者随机*/
+//        int num = arc4random();
+        
+        /*作者:窦静轩    描述:只有有米广告*/
+        int num = 2;
+        
+//        /*作者:窦静轩    描述:只有有米admob*/
+//        int num = 1;
+        
+        
         if (num % 2 == 0) {
             YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
             [adView320x50 start];

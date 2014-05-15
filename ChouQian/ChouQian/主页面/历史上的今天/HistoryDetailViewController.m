@@ -155,6 +155,7 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
     };
     
     FrontiaShareContent *content=[[FrontiaShareContent alloc] init];
+    content.url = @"https://itunes.apple.com/us/app/sheng-huo-zhu-shou/id877533761";
     content.title = @"生活助手";
     content.description = @"出门前 抽个签看看运势？看看我他（她）的星座合不合得来？看看历史上的今天发生过什么事情 一切尽在生活必备助手 生活必备助手 让您的生活 变得更美";
     UIGraphicsBeginImageContext(self.view.frame.size); //currentView 当前的view
