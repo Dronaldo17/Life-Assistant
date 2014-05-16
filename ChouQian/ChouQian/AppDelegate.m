@@ -19,8 +19,11 @@
     /*作者:窦静轩    描述:AVOS的加载*/
     [self addAVOS];
     
+    /*作者:窦静轩    描述:添加Umeng统计*/
+    [self addUmeng];
+    
     /*作者:窦静轩    描述:添加广告*/
-     [YouMiConfig launchWithAppID:YouMi_Publish_ID appSecret:YouMi_Secret];
+    [self addADViews];
     
     /*作者:窦静轩    描述:加载Menu*/
     [self addMenu];
@@ -144,5 +147,16 @@
     FrontiaShare *share = [Frontia getShare];
     return [share handleOpenURL:url];
 }
+-(void)addUmeng
+{
+    [MobClick startWithAppkey:UMENG_APPKEY reportPolicy:REALTIME channelId:@"Debug"];
+}
+-(void)addADViews
+{
+    if ([isVerty intValue] == 1) {
+        return ;
+    }
 
+    [YouMiConfig launchWithAppID:YouMi_Publish_ID appSecret:YouMi_Secret];
+}
 @end

@@ -153,7 +153,7 @@
     }
     
     NSArray *titles = @[@"每日一签", @"生肖", @"星座", @"历史上的今天",@"设置"];
-    NSArray *images = @[@"IconHome", @"IconSettings", @"IconProfile", @"IconCalendar",@"IconSettings"];
+    NSArray *images = @[@"IconHome", @"IconZodiac", @"IconProfile", @"IconCalendar",@"IconSettings"];
     cell.textLabel.text = titles[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     

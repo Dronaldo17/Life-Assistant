@@ -57,38 +57,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m"
-            timestampString = "421848741.647303"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "483"
-            endingLineNumber = "483"
-            landmarkName = "-showProgress:status:maskType:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.m"
-            timestampString = "421848786.321762"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "201"
-            endingLineNumber = "201"
-            landmarkName = "-drawRect:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ChouQian/&#x4e3b;&#x9875;&#x9762;/&#x751f;&#x8096;/ChineseZodiacController.m"
             timestampString = "421910911.375543"
             startingColumnNumber = "9223372036854775807"
@@ -96,6 +64,22 @@
             startingLineNumber = "103"
             endingLineNumber = "103"
             landmarkName = "-loadData"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChouQian/&#x5e7f;&#x544a;/&#x52a9;&#x624b;&#x5e7f;&#x544a;&#x7ba1;&#x7406;/ZhuShouAdView.m"
+            timestampString = "421912578.646083"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-initWithAdView:controller:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

@@ -8,20 +8,45 @@
 
 #import "ZhuShouAdView.h"
 
+#define ISVERRITYING 1
+
+
+#define YOUMIASTYPE @"youmi"
+
+#define GOOGLEADMOB @"admob"
+
+
 @implementation ZhuShouAdView
 -(id)initWithAdView:(UIView*)bottomView controller:(UIViewController*)controller
 {
     self = [super init];
     if (self) {
-//        /*作者:窦静轩    描述:两者随机*/
-//        int num = arc4random();
         
-        /*作者:窦静轩    描述:只有有米广告*/
-        int num = 2;
         
-//        /*作者:窦静轩    描述:只有有米admob*/
-//        int num = 1;
+        NSString * isVerty = [MobClick getConfigParams:InVerify];
         
+        if ([isVerty intValue] == ISVERRITYING) {
+            return nil;
+        }
+        
+        int num = -1;
+        
+        NSString * adPlatform = [MobClick getConfigParams:ADType];
+        if ([adPlatform isEqualToString:YOUMIASTYPE]) {
+             /*作者:窦静轩    描述:只有有米广告*/
+            num = 2;
+        }
+        
+        if ([adPlatform isEqualToString:GOOGLEADMOB]) {
+             /*作者:窦静轩    描述:只有admob*/
+            num = 1;
+        }
+        
+        if (num<0) {
+            //        /*作者:窦静轩    描述:两者随机*/
+            //        int num = arc4random();
+            num = arc4random();
+        }
         
         if (num % 2 == 0) {
             YouMiView *adView320x50=[[YouMiView alloc] initWithContentSizeIdentifier:YouMiBannerContentSizeIdentifier320x50 delegate:self];
