@@ -153,6 +153,7 @@
 }
 -(void)addADViews
 {
+      NSString * isVerty = [MobClick getConfigParams:InVerify];
     if ([isVerty intValue] == 1) {
         return ;
     }

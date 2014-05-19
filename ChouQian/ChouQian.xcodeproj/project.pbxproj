@@ -151,6 +151,10 @@
 		95D04CB21924C9960059DE81 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 95D04CAF1924C9960059DE81 /* libUMFeedback.a */; };
 		95D04CB31924C9960059DE81 /* umFeedback.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 95D04CB01924C9960059DE81 /* umFeedback.bundle */; };
 		95D9207018CF5DD7006F54A0 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D9206F18CF5DD7006F54A0 /* MenuViewController.m */; };
+		95DC32D519265EAD0043373F /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC32D119265EAD0043373F /* Icon-60.png */; };
+		95DC32D619265EAD0043373F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC32D219265EAD0043373F /* Icon-72.png */; };
+		95DC32D719265EAD0043373F /* Icon_120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC32D319265EAD0043373F /* Icon_120x120.png */; };
+		95DC32D819265EAD0043373F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 95DC32D419265EAD0043373F /* Icon.png */; };
 		95DD877218D0B0FE005E490B /* CQLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877118D0B0FE005E490B /* CQLabel.m */; };
 		95DD877518D0BEE7005E490B /* ParseTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DD877418D0BEE7005E490B /* ParseTools.m */; };
 		95F9670419176100004ED47F /* LazyFadeInLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F9670119176100004ED47F /* LazyFadeInLayer.m */; };
@@ -420,6 +424,10 @@
 		95D04CB11924C9960059DE81 /* UMFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMFeedback.h; sourceTree = "<group>"; };
 		95D9206E18CF5DD7006F54A0 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		95D9206F18CF5DD7006F54A0 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		95DC32D119265EAD0043373F /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		95DC32D219265EAD0043373F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		95DC32D319265EAD0043373F /* Icon_120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_120x120.png; sourceTree = "<group>"; };
+		95DC32D419265EAD0043373F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		95DD877018D0B0FE005E490B /* CQLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLabel.h; sourceTree = "<group>"; };
 		95DD877118D0B0FE005E490B /* CQLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQLabel.m; sourceTree = "<group>"; };
 		95DD877318D0BEE7005E490B /* ParseTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseTools.h; sourceTree = "<group>"; };
@@ -1103,6 +1111,10 @@
 		95C94CAE1915EB02003490E0 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				95DC32D119265EAD0043373F /* Icon-60.png */,
+				95DC32D219265EAD0043373F /* Icon-72.png */,
+				95DC32D319265EAD0043373F /* Icon_120x120.png */,
+				95DC32D419265EAD0043373F /* Icon.png */,
 				95D04CA41924B0D50059DE81 /* setting-phone@2x.png */,
 				95D04CA21924AFBB0059DE81 /* setting-mianze@2x.png */,
 				95D04C9E1924AF560059DE81 /* setting-about@2x.png */,
@@ -1233,6 +1245,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = doujingxuan;
 				TargetAttributes = {
+					9569024918C9A65800B2F109 = {
+						DevelopmentTeam = G4Z4UBHULT;
+					};
 					9569026418C9A65800B2F109 = {
 						TestTargetID = 9569024918C9A65800B2F109;
 					};
@@ -1264,8 +1279,10 @@
 				956902D818CBFC6500B2F109 /* xingzuo.db in Resources */,
 				958DF1151921F8E50071B67B /* Images.xcassets in Resources */,
 				9589CC011923004B002743FC /* README.txt in Resources */,
+				95DC32D619265EAD0043373F /* Icon-72.png in Resources */,
 				95BCD0C9192223DD005D31DE /* in-appstore.png in Resources */,
 				9569025818C9A65800B2F109 /* InfoPlist.strings in Resources */,
+				95DC32D519265EAD0043373F /* Icon-60.png in Resources */,
 				95BCD0C1192223DD005D31DE /* xcode.min.css in Resources */,
 				95BCD0C6192223DD005D31DE /* icon.png in Resources */,
 				95BCD0BB192223DD005D31DE /* changelog.txt in Resources */,
@@ -1286,6 +1303,7 @@
 				95D04C991924AC2A0059DE81 /* SettingList.plist in Resources */,
 				95D04CA31924AFBB0059DE81 /* setting-mianze@2x.png in Resources */,
 				95BCD0BE192223DD005D31DE /* doc.css in Resources */,
+				95DC32D719265EAD0043373F /* Icon_120x120.png in Resources */,
 				955C0BA71920B25100D3BD58 /* demo@2x.png in Resources */,
 				9514C9EA19209A040097F268 /* Default@2x.png in Resources */,
 				95CD318519162D2900AF9550 /* PhotoDownloadfailedSamll@2x.png in Resources */,
@@ -1294,6 +1312,7 @@
 				95BCD0CA192223DD005D31DE /* library-search-paths.png in Resources */,
 				9514C9F019209CF60097F268 /* Default-568h@2x.png in Resources */,
 				95BCD0C7192223DD005D31DE /* file.png in Resources */,
+				95DC32D819265EAD0043373F /* Icon.png in Resources */,
 				955828AB18F2FA840009FB73 /* Zodiac.plist in Resources */,
 				95BCD0C3192223DD005D31DE /* doc_en.html in Resources */,
 				956902D718CBFC6500B2F109 /* shengxiao.db in Resources */,
@@ -1537,6 +1556,7 @@
 					armv7,
 					armv7s,
 				);
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1613,9 +1633,10 @@
 					armv7,
 					armv7s,
 				);
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChouQian/第三方库/BaiduSNS/libs",

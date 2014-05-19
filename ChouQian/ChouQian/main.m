@@ -12,8 +12,8 @@
 
 int main(int argc, char * argv[])
 {
-    [SysConfig setSysEnv:SysDev];
-    SetLogLevel(LogWarn);
+    [SysConfig setSysEnv:SysProd];
+    SetLogLevel(LogError);
     
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
