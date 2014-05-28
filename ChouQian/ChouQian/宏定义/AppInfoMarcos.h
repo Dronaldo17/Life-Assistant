@@ -47,4 +47,6 @@
 
 #define GoogleSDKPub_ID @"ca-app-pub-3057290509101093/2500403569"
 
+#define APP_STORE_URL @"https://itunes.apple.com/us/app/sheng-huo-bi-bei-zhu-shou/id877533761?l=zh&ls=1&mt=8"
+
 #endif

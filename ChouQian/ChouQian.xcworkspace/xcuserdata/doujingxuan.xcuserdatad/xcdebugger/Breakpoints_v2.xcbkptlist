@@ -73,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChouQian/&#x5e7f;&#x544a;/&#x52a9;&#x624b;&#x5e7f;&#x544a;&#x7ba1;&#x7406;/ZhuShouAdView.m"
-            timestampString = "421944170.704434"
+            filePath = "ChouQian/&#x4e3b;&#x9875;&#x9762;/&#x5386;&#x53f2;&#x4e0a;&#x7684;&#x4eca;&#x5929;/TodayHistoryController.m"
+            timestampString = "422964515.278361"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-initWithAdView:controller:"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
+            landmarkName = "-backButtonClicked:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

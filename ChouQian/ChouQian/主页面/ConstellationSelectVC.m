@@ -44,6 +44,7 @@
     // Do any additional setup after loading the view.
     
     self.title = @"星座选择";
+    self.leftButtonShow  = YES;
     [super viewDidLoad];
     
     
@@ -98,7 +99,7 @@
 -(void)doneClicked:(id)sender
 {
     if (self.f_AstroName1.length <=0 || self.f_AstroName2.length <=0) {
-        [UITools alertShow:@"请选择生肖"];
+        [UITools alertShow:@"请选择两个星座"];
         return;
     }
     
@@ -142,6 +143,11 @@
 - (void)leveyPopListViewDidCancel;
 {
     
+}
+-(void)backButtonClicked:(id)sender
+{
+    [self.sideMenuViewController presentMenuViewController]
+    ;
 }
 
 @end

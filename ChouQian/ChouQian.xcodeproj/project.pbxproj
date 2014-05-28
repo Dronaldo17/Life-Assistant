@@ -1618,7 +1618,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1635,8 +1635,8 @@
 				);
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-3";
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dou Jingxuan (G4Z4UBHULT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ChouQian/第三方库/BaiduSNS/libs",
@@ -1696,7 +1696,7 @@
 					SystemConfiguration,
 				);
 				PRODUCT_NAME = "抽签";
-				PROVISIONING_PROFILE = "94E0989B-BDF4-47ED-BC7D-DBF192C4745D";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;

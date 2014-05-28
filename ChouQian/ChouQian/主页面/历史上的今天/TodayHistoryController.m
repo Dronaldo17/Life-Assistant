@@ -17,7 +17,6 @@
 #import "TodayDetailModel.h"
 #import "TodayDataParse.h"
 
-
 #define TodayTableName @"TodayTableName"
 
 @interface TodayHistoryController ()<UITableViewDataSource,UITableViewDelegate>
@@ -48,6 +47,7 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
 - (void)viewDidLoad
 {
     self.title = @"历史上的今天";
+    self.leftButtonShow = YES;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _tableView = [[ADLivelyTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -240,5 +240,10 @@ typedef void(^GetTodayDataFailureBlock)(AFHTTPRequestOperation *operation, NSErr
     HistoryDetailViewController * dvc = [[HistoryDetailViewController alloc] init];
     dvc.dict = dict;
     [controller.navigationController pushViewController:dvc animated:YES];
+}
+-(void)backButtonClicked:(id)sender
+{
+     [self.sideMenuViewController presentMenuViewController]
+     ;
 }
 @end

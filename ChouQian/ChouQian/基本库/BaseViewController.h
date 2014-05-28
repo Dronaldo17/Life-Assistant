@@ -15,5 +15,6 @@
 }
 @property (nonatomic,assign)BOOL leftButtonShow;
 
+-(void)backButtonClicked:(id)sender;
 -(void)rightButtonClicked:(id)sender;
 @end

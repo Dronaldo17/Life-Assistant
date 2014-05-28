@@ -32,3 +32,4 @@
 #import "YouMiWall.h"
 #import "UmengMarcos.h"
 #import "MobClick.h"
+#import "RESideMenu.h"

@@ -43,6 +43,7 @@
 - (void)viewDidLoad
 {
     self.title = @"生肖选择";
+    self.leftButtonShow  = YES;
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
@@ -107,7 +108,7 @@
 -(void)doneClicked:(id)sender
 {
     if (self.shengxiao1.length <=0 || self.shengxiao2.length <=0) {
-        [UITools alertShow:@"请选择生肖"];
+        [UITools alertShow:@"请选择两个生肖"];
         return;
     }
 
@@ -151,6 +152,11 @@
 - (void)leveyPopListViewDidCancel;
 {
 
+}
+-(void)backButtonClicked:(id)sender
+{
+    [self.sideMenuViewController presentMenuViewController]
+    ;
 }
 
 @end
